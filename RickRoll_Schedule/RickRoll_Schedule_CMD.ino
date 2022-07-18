@@ -1,3 +1,5 @@
+// rick roll task by Shiro
+
 #include "DigiKeyboard.h"
 void setup() {}
   
@@ -27,6 +29,8 @@ void loop() {
   DigiKeyboard.delay(300);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
+  // /SC — defines the schedule for the task. Options available, include MINUTE, HOURLY, DAILY, WEEKLY, MONTHLY, ONCE, ONSTART, ONLOGON, ONIDLE, and ONEVENT.
+  // defines the time to run the task (in 24 hours format).
   DigiKeyboard.print("schtasks /create /tn \"RickRoll\" /SC MINUTE /st 13:00 /tr \"C:\\Windows\\Temp\\roll.bat\"");
   DigiKeyboard.delay(300);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
